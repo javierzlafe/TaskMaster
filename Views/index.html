@@ -4,10 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TaskMaster</title>
+    <meta name="description" content="Gestor para crear, asignar y priorizar tareas fácilmente">
+    <meta name="keywords" content="crear, asignar, priorizar, tareas, gestor, TaskMaster">
+    <meta property="og:description" content="Gestor para crear, asignar y priorizar tareas fácilmente">
+    <meta property="og:title" content="Gestor de tareas">
+    <meta property="og:image" content="../assets/img/logo.ico">
+    <link rel="icon" href="../assets/img/logoico.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Task Master</title>
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-    <h1>TaskMaster</h1>
-    
+    <div class="container">
+        <header>
+            <div class="cabezal">
+                <div class="cajalogo">
+                    <img src="../assets/img/LogoTM-Blanco.png" alt="logo" class="imgcajalogo"></a>
+                </div>
+                <div class="TaskMaster"><h1>#SECCIÓN A COMPLETAR</h1></div>
+            </div>
+        </header>
+        <main>
+            <div id="taskForm">
+                <h2>Crear Tarea</h2>
+                <form id="newTaskForm">
+                    <input type="text" id="taskName" placeholder="Nombre de la tarea" required>
+                    <input type="text" id="taskDescription" placeholder="Descripción de la tarea" required>
+                    <input type="date" id="taskDeadline" required>
+                    <select id="taskPriority">
+                        <option value="low">Baja</option>
+                        <option value="medium">Media</option>
+                        <option value="high">Alta</option>
+                    </select>
+                    <button type="submit">Agregar</button>
+                </form>
+            </div>
+            <div id="taskList">
+                <h2>Lista de Tareas</h2>
+                <ul id="tasks"></ul>
+            </div>
+        </main>
+    </div>
+    <script src="../Scripts/main.js"></script>
 </body>
 </html>
