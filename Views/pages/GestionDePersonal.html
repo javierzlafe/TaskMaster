@@ -12,8 +12,8 @@
     <link rel="icon" href="../assets/img/logoico.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
-    <title>Task Master || Centro de Tareas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap" rel="fontstylesheet">
+    <title>Task Master</title>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
@@ -22,11 +22,11 @@
             <div class="menu">
                 <nav class="navegador">
                     <ul>
-                        <li><a href="pages/TareasFinalizadas.html">Tareas Finalizadas</a></li>
-                        <li><a href="pages/CreadorDeTareas.html">Creador de Tareas</a></li>
-                        <li><a href="#">Centro de Tareas</a></li>
-                        <li><a href="pages/GestionDePersonal.html">Gestión de Personal</a></li>
-                        <li><a href="pages/Acerca&Contacto.html"> Acerca & Contacto</a></li>
+                        <li><a href="pages/tasacion.html">Tareas Finalizadas</a></li>
+                        <li><a href="pages/venta.html">Creador de Tareas</a></li>
+                        <li><a href="pages/quienessomos.html">Centro de Tareas</a></li>
+                        <li><a href="pages/contactenos.html">Gestión de Personal</a></li>
+                        <li><a href="pages/alquiler.html"> Acerca & Contacto</a></li>
                     </ul>
                 </nav>
             </div>
@@ -41,11 +41,11 @@
                     </label>
                     <div class="container_flex">
                         <ul class="container_menu flex_column">
-                            <li><a href="pages/TareasFinalizadas.html">Tareas Finalizadas</a></li>
-                            <li><a href="pages/CreadorDeTareas.html">Creador de Tareas</a></li>
-                            <li><a href="#">Centro de Tareas</a></li>
-                            <li><a href="pages/GestionDePersonal.html">Gestión de Personal</a></li>
-                            <li><a href="pages/Acerca&Contacto.html"> Acerca & Contacto</a></li>
+                            <li><a href="pages/tasacion.html">Tareas Finalizadas</a></li>
+                            <li><a href="pages/venta.html">Creador de Tareas</a></li>
+                            <li><a href="pages/quienessomos.html">Centro de Tareas</a></li>
+                            <li><a href="pages/contactenos.html">Gestión de Personal</a></li>
+                            <li><a href="pages/alquiler.html"> Acerca & Contacto</a></li>
                         </ul>
                     </div>
                 </div>
@@ -63,25 +63,10 @@
             <div id="taskForm">
                 <h2>Crear Tarea</h2>
                 <form id="newTaskForm">
-                    <label for="ListaDeEmpleadosTotal" >Empleado asignado:<br>
-                    <select id="taskEmployee">
-                        <option selected="selected" value="none"></option>
-                        <option value="ListaDeEmpleados">Mengano</option>
-                        <option value="ListaDeEmpleados">Fulano</option>
-                        <option value="ListaDeEmpleados">Pepito</option>
-                        <option value="ListaDeEmpleados">Juan Carlos</option>
-                        <option value="ListaDeEmpleados">Tony Stark</option>
-                        <option value="ListaDeEmpleados">Donald Trump</option>
-                    </select>
-                    <label for="Tarea">Tarea:<br>
                     <input type="text" id="taskName" placeholder="Nombre de la tarea" required>
-                    <label for="Descripcion">Descripción:<br>
                     <input type="text" id="taskDescription" placeholder="Descripción de la tarea" required>
-                    <label for="Deadline">Deadline:<br>
                     <input type="date" id="taskDeadline" required>
-                    <label for="Prioridad">Prioridad:<br>
                     <select id="taskPriority">
-                        <option selected="selected" value="none"></option>
                         <option value="low">Baja</option>
                         <option value="medium">Media</option>
                         <option value="high">Alta</option>
