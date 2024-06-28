@@ -2,12 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TaskMaster</title>
+    <title>Gestor de Proyectos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+            
+        }
+        .project, .user, .task {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .task {
+            padding: 5px 10px;
+        }
+
+        .contenedorUsuarios{
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
-<body>
+
     <h1>TaskMaster</h1>
-    
+    <div id="project-container"></div>
+    <div id="tasks-container"></div>
+    <div class="contenedorUsuarios">
+        <h2>Usuarios</h2>
+        <div id="user-container"></div>
+    </div>
+
+    <script src="../Integration/scriptsAdri/api.js"></script>
 </body>
 </html>
