@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,68 +15,61 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap" rel="fontstylesheet">
     <title>Task Master</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
+
 <body>
     <div class="progress-bar" id="progressBar"></div>
-        <header>
-            <div class="menu">
-                <nav class="navegador">
-                    <ul>
-                        <li><a href="pages/tasacion.html">Tareas Finalizadas</a></li>
-                        <li><a href="pages/venta.html">Creador de Tareas</a></li>
-                        <li><a href="pages/quienessomos.html">Centro de Tareas</a></li>
-                        <li><a href="pages/contactenos.html">Gestión de Personal</a></li>
-                        <li><a href="pages/alquiler.html"> Acerca & Contacto</a></li>
+    <header>
+        <div class="menu">
+            <nav class="navegador">
+                <ul>
+                    <li><a href="./TareasFinalizadas.html">Tareas Finalizadas</a></li>
+                    <li><a href="./CreadorDeTareas.html">Creador de Tareas</a></li>
+                    <li><a href="../index.html">Centro de Tareas</a></li>
+                    <li><a href="./GestionDePersonal.html">Gestión de Personal</a></li>
+                    <li><a href="./Acerca&Contacto.html"> Acerca & Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="movil">
+            <div>
+                <input type="checkbox" id="btn_menu">
+                <label for="btn_menu" class="btn_menu flex_column">
+                    <span id="btn_span_1" class="btn_span"></span>
+                    <span id="btn_span_2" class="btn_span"></span>
+                    <span id="btn_span_3" class="btn_span"></span>
+                </label>
+                <div class="container_flex">
+                    <ul class="container_menu flex_column">
+                        <li><a href="./TareasFinalizadas.html">Tareas Finalizadas</a></li>
+                        <li><a href="./CreadorDeTareas.html">Creador de Tareas</a></li>
+                        <li><a href="../index.html">Centro de Tareas</a></li>
+                        <li><a href="./GestionDePersonal.html">Gestión de Personal</a></li>
+                        <li><a href="./Acerca&Contacto.html"> Acerca & Contacto</a></li>
                     </ul>
-                </nav>
-            </div>
-        
-            <div class="movil">
-                <div>
-                    <input type="checkbox" id="btn_menu">
-                    <label for="btn_menu" class="btn_menu flex_column">
-                        <span id="btn_span_1" class="btn_span"></span>
-                        <span id="btn_span_2" class="btn_span"></span>
-                        <span id="btn_span_3" class="btn_span"></span>
-                    </label>
-                    <div class="container_flex">
-                        <ul class="container_menu flex_column">
-                            <li><a href="pages/tasacion.html">Tareas Finalizadas</a></li>
-                            <li><a href="pages/venta.html">Creador de Tareas</a></li>
-                            <li><a href="pages/quienessomos.html">Centro de Tareas</a></li>
-                            <li><a href="pages/contactenos.html">Gestión de Personal</a></li>
-                            <li><a href="pages/alquiler.html"> Acerca & Contacto</a></li>
-                        </ul>
-                    </div>
                 </div>
-        </header>
-
-        <div class="containermenu">
-            <div class="cabezal">
-                <div class="cajalogo">
-                    <img src="../assets/img/LogoTM-Blanco.png" alt="logo" class="imgcajalogo"></a>
-                </div>
-                <div class="TaskMaster"><h1>CENTRO DE TAREAS</h1></div>
             </div>
+    </header>
 
-            <main>
-            <div id="taskForm">
-                <h2>Crear Tarea</h2>
-                <form id="newTaskForm">
-                    <input type="text" id="taskName" placeholder="Nombre de la tarea" required>
-                    <input type="text" id="taskDescription" placeholder="Descripción de la tarea" required>
-                    <input type="date" id="taskDeadline" required>
-                    <select id="taskPriority">
-                        <option value="low">Baja</option>
-                        <option value="medium">Media</option>
-                        <option value="high">Alta</option>
-                    </select>
-                    <button type="submit">Agregar</button>
-                </form>
+    <div class="containermenu">
+        <div class="cabezal">
+            <div class="cajalogo">
+                <img src="/assets/img/LogoTM-Blanco.png" alt="logo" class="imgcajalogo"></a>
+            </div>
+            <div class="TaskMaster">
+                <h1>Información de personal</h1>
+            </div>
+        </div>
+
+        <main>
+            <div id="taskList">
+                <h2>Empleados activos</h2>
+                <ul id="tasks"></ul>
             </div>
             <div id="taskList">
-                <h2>Lista de Tareas</h2>
+                <h2>Empleados ausentes</h2>
                 <ul id="tasks"></ul>
             </div>
         </main>
@@ -85,4 +79,5 @@
     </footer>
     <script src="../Scripts/main.js"></script>
 </body>
+
 </html>
