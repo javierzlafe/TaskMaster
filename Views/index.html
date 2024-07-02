@@ -12,7 +12,8 @@
     <link rel="icon" href="../assets/img/logoico.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <title>Task Master</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet"> -->
+    <title>Task Master || Centro de Tareas</title>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
@@ -21,11 +22,11 @@
             <div class="menu">
                 <nav class="navegador">
                     <ul>
-                        <li><a href="pages/tasacion.html">Tareas Finalizadas</a></li>
-                        <li><a href="pages/venta.html">Creador de Tareas</a></li>
-                        <li><a href="pages/quienessomos.html">Centro de Tareas</a></li>
-                        <li><a href="pages/contactenos.html">Gestión de Personal</a></li>
-                        <li><a href="pages/alquiler.html"> Acerca & Contacto</a></li>
+                        <li><a href="pages/TareasFinalizadas.html">Tareas Finalizadas</a></li>
+                        <li><a href="pages/CreadorDeTareas.html">Creador de Tareas</a></li>
+                        <li><a href="#">Centro de Tareas</a></li>
+                        <li><a href="pages/GestionDePersonal.html">Gestión de Personal</a></li>
+                        <li><a href="pages/Acerca&Contacto.html"> Acerca & Contacto</a></li>
                     </ul>
                 </nav>
             </div>
@@ -40,11 +41,12 @@
                     </label>
                     <div class="container_flex">
                         <ul class="container_menu flex_column">
-                            <li><a href="pages/tasacion.html">Tareas Finalizadas</a></li>
-                            <li><a href="pages/venta.html">Creador de Tareas</a></li>
-                            <li><a href="pages/quienessomos.html">Centro de Tareas</a></li>
-                            <li><a href="pages/contactenos.html">Gestión de Personal</a></li>
-                            <li><a href="pages/alquiler.html"> Acerca & Contacto</a></li>
+                            <li><a href="pages/TareasFinalizadas.html">Tareas Finalizadas</a></li>
+                            <li><a href="pages/CreadorDeTareas.html">Creador de Tareas</a></li>
+                            <li><a href="#">Centro de Tareas</a></li>
+                            <li><a href="pages/GestionDePersonal.html">Gestión de Personal</a></li>
+                            <li><a href="pages/Acerca&Contacto.html"> Acerca & Contacto</a></li>
+
                         </ul>
                     </div>
                 </div>
@@ -55,26 +57,17 @@
                 <div class="cajalogo">
                     <img src="../assets/img/LogoTM-Blanco.png" alt="logo" class="imgcajalogo"></a>
                 </div>
-                <div class="TaskMaster"><h1>CENTRO DE TAREAS</h1></div>
+                <div class="TaskMaster"><h1>Centro de Tareas</h1></div>
             </div>
 
             <main>
-            <div id="taskForm">
-                <h2>Crear Tarea</h2>
-                <form id="newTaskForm">
-                    <input type="text" id="taskName" placeholder="Nombre de la tarea" required>
-                    <input type="text" id="taskDescription" placeholder="Descripción de la tarea" required>
-                    <input type="date" id="taskDeadline" required>
-                    <select id="taskPriority">
-                        <option value="low">Baja</option>
-                        <option value="medium">Media</option>
-                        <option value="high">Alta</option>
-                    </select>
-                    <button type="submit">Agregar</button>
-                </form>
+
+            <div id="taskList">
+                <h2>Lista de Tareas Pendientes</h2>
+                <ul id="tasks"></ul>
             </div>
             <div id="taskList">
-                <h2>Lista de Tareas</h2>
+                <h2>Guía de prioridad</h2>
                 <ul id="tasks"></ul>
             </div>
         </main>

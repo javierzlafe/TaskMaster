@@ -18,14 +18,13 @@ body {
 }
 
 header {
-    /* Degradado de rojo a rojo oscuro */
     color: #fff;
     padding-top: 15px;
     padding-bottom: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30px;
+    height: 40px;
     position: relative;
     width: 100%;
     z-index: 1010;
@@ -69,21 +68,22 @@ input {
 }
 
 button {
-    background: #333;
+    background: #336699;
     color: #fff;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background: #555;
+    background: #5084b8;
+    transition: 500ms;
 }
 
 .cabezal {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #333;
+    background: #3a75af;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -91,8 +91,6 @@ button:hover {
 }
 
 .cajalogo {
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 30px;
     display: flex;
     align-items: center;
 }
@@ -125,11 +123,11 @@ button:hover {
 
 
 nav {
-    padding: 10px;
+    padding: 15px;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: space-evenly;
-    background-color: #333;
+    background-color: #336699;
     border-radius: 35px;
 }
 
@@ -138,7 +136,7 @@ ul {
     display: flex;
     margin: 0;
     padding: 0;
-    gap: 10px;
+    gap: 30px;
 }
 
 a {
@@ -161,12 +159,21 @@ ul li:hover {
     /* Ajustamos también el padding del li en el estado de hover */
 }
 
+ul li a {
+    font-family: "Yellowtail", cursive;
+    font-weight: 500;
+    font-style: normal;
+}
+
 ul li:hover a {
     background: #fff;
-    color: #9c9c9c;
+    color: #5f5f5f;
     /* Rojo oscuro para el color de resaltado */
     border-radius: 5px;
-    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .movil {
@@ -289,7 +296,7 @@ display: none;
 }
 
 footer {
-    background-color: #252525;
+    background-color: #275d92;
     color: #fff;
     text-align: center;
     padding-top: 0px;
@@ -297,12 +304,24 @@ footer {
     bottom: 0;
     width: 100%;
     z-index: 990;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 footer p {
 margin-top: 5px;
 margin-bottom: 5px;
+color: #ffffff;
+font-size: 0.8em;
+}
+
+.TaskMaster h1,
+.yellowtail-regular {
+    font-family: "Yellowtail", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.TaskMaster h1 {
+    font-size: 3em;
 }
 
 /* -------------------------------------------------------------------------------------------------- */
@@ -314,7 +333,6 @@ margin-bottom: 5px;
     }
 
     header {
-        /* Degradado de rojo a rojo oscuro */
         color: #fff;
         padding: 15px;
         display: flex;
@@ -363,6 +381,9 @@ margin-bottom: 5px;
 
     .introduccion h1 {
         font-size: 2.5em;
+        font-family: "Seaweed Script", cursive;
+        font-weight: 400;
+        font-style: normal;
     }
 
     .introduccion p {
