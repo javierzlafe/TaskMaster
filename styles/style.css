@@ -12,20 +12,20 @@ body {
 }
 
 .containermenu {
-    display: flexbox;
     justify-content: center;
     align-items: center;
 }
 
+
+
 header {
-    /* Degradado de rojo a rojo oscuro */
     color: #fff;
     padding-top: 15px;
     padding-bottom: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30px;
+    height: 40px;
     position: relative;
     width: 100%;
     z-index: 1010;
@@ -53,37 +53,63 @@ main {
     width: 48%;
 }
 
+.InputDetalles{
+    width: 97.3%;
+}
+
+.RecuadroTask {
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        width: 48%;
+}
+
+#TareasFinalizadas {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#taskListFinalizadas {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 h2 {
     margin-top: 0;
 }
 
 input, select, button {
     display: block;
-    width: 95%;
+    width: 100%;
     margin-bottom: 10px;
     padding: 10px;
 }
 
-input {
-    width: 90%;
-}
-
 button {
-    background: #333;
+    background: #336699;
     color: #fff;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background: #555;
+    background: #5084b8;
+    transition: 500ms;
 }
 
 .cabezal {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #333;
+    background: #3a75af;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -91,8 +117,6 @@ button:hover {
 }
 
 .cajalogo {
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 30px;
     display: flex;
     align-items: center;
 }
@@ -105,7 +129,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Ocupa todo el espacio disponible para centrar el texto */
+    width: 100%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -118,19 +142,31 @@ button:hover {
     width: 0;
     height: 5px;
     background: linear-gradient(to right, #9c9c9c, #555555);
-    /* Degradado de rojo a rojo oscuro */
     z-index: 100000;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
 }
 
+.menu{
+    /*
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 0;*/
+}
 
 nav {
-    padding: 10px;
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    box-shadow: 5px 3px 15px rgba(0, 0, 0, 0.2);
     display: flex;
+    /*
+    flex-direction: column;
+    position: absolute;
+    right: 0;*/
     justify-content: space-evenly;
-    background-color: #333;
-    border-radius: 35px;
+    background-color: #3978b8;
+    border-radius: 50px;
 }
 
 ul {
@@ -138,7 +174,7 @@ ul {
     display: flex;
     margin: 0;
     padding: 0;
-    gap: 10px;
+    gap: 30px;
 }
 
 a {
@@ -151,22 +187,28 @@ a {
 
 ul li {
     transition: padding 0.3s ease-in-out;
-    /* Agregamos transición al padding */
+
 }
 
 ul li:hover {
     padding-left: 8px;
-    /* Ajustamos también el padding del li en el estado de hover */
     padding-right: 8px;
-    /* Ajustamos también el padding del li en el estado de hover */
+}
+
+ul li a {
+    font-family: "Yellowtail", cursive;
+    font-weight: 500;
+    font-style: normal;
 }
 
 ul li:hover a {
     background: #fff;
-    color: #9c9c9c;
-    /* Rojo oscuro para el color de resaltado */
+    color: #5f5f5f;
     border-radius: 5px;
-    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .movil {
@@ -189,6 +231,41 @@ ul li:hover a {
     height: 89vh;
     transition: all .5s ease;
     z-index: 2450;
+}
+
+.DatosDeInteres{
+    display: flex;
+    flex-direction: column;
+}
+
+.DatosDeInteres p{
+    color: black;
+    }
+
+.DatosDeInteres a{
+color: blue;
+}
+
+.no-scroll-textarea {
+    width: 99.3%; /* Fija el ancho */
+    height: 50px; /* Fija la altura */
+    resize: none; /* Evita que el usuario cambie el tamaño del textarea */
+    overflow: hidden; /* Oculta cualquier contenido que exceda el tamaño */
+}
+
+.chequi{
+display: flex;
+flex-direction: row;
+}
+
+.redes {
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	padding: 10px;
+	list-style: none;
+    width: 8%;
 }
 
 #btn_menu,
@@ -289,7 +366,7 @@ display: none;
 }
 
 footer {
-    background-color: #252525;
+    background-color: #275d92;
     color: #fff;
     text-align: center;
     padding-top: 0px;
@@ -297,12 +374,25 @@ footer {
     bottom: 0;
     width: 100%;
     z-index: 990;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 footer p {
 margin-top: 5px;
 margin-bottom: 5px;
+color: #ffffff;
+font-size: 0.8em;
+}
+
+.TaskMaster h1,
+.yellowtail-regular {
+    font-family: "Yellowtail", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 0px 1px 2px #272727;
+}
+
+.TaskMaster h1 {
+    font-size: 3em;
 }
 
 /* -------------------------------------------------------------------------------------------------- */
@@ -314,7 +404,6 @@ margin-bottom: 5px;
     }
 
     header {
-        /* Degradado de rojo a rojo oscuro */
         color: #fff;
         padding: 15px;
         display: flex;
@@ -363,6 +452,9 @@ margin-bottom: 5px;
 
     .introduccion h1 {
         font-size: 2.5em;
+        font-family: "Seaweed Script", cursive;
+        font-weight: 400;
+        font-style: normal;
     }
 
     .introduccion p {
@@ -487,5 +579,4 @@ margin-bottom: 5px;
     footer p {
     font-size: 0.68em;
     }
-
 }
