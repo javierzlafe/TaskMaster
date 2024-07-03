@@ -59,7 +59,7 @@
                 <img src="/assets/img/LogoTM-Blanco.png" alt="logo" class="imgcajalogo"></a>
             </div>
             <div class="TaskMaster">
-                <h1>Gestor de tareas</h1>
+                <h1>Creador de tareas</h1>
             </div>
         </div>
 
@@ -68,7 +68,7 @@
                 <h2>Crear Tarea</h2>
                 <form id="newTaskForm">
                     <label for="ListaDeEmpleadosTotal" >Empleado asignado:<br>
-                    <select id="taskEmployee">
+                    <select id="taskAssignee"> <!-- Cambia ID con equipo js -->
                         <option selected="selected" value="none"></option>
                         <option value="ListaDeEmpleados">Mengano</option>
                         <option value="ListaDeEmpleados">Fulano</option>
@@ -77,19 +77,21 @@
                         <option value="ListaDeEmpleados">Tony Stark</option>
                         <option value="ListaDeEmpleados">Donald Trump</option>
                     </select>
+                    <div class="InputDetalles">
                     <label for="Tarea">Tarea:<br>
-                    <input type="text" id="taskName" placeholder="Nombre de la tarea" required>
+                    <input type="text" id="taskName" placeholder="Nombre de la tarea" required> <!-- CHECKEAR ID con equipo js -->
                     <label for="Descripcion">Descripción:<br>
                     <input type="text" id="taskDescription" placeholder="Descripción de la tarea" required>
                     <label for="Deadline">Deadline:<br>
                     <input type="date" id="taskDeadline" required>
+                </div>
                     <label for="Prioridad">Prioridad:<br>
                     <select id="taskPriority">
                         <option selected="selected" value="none"></option>
                         <option value="low">Baja</option>
                         <option value="medium">Media</option>
                         <option value="high">Alta</option>
-                    </select>
+                    </select><br>
                     <button type="submit">Agregar</button>
                 </form>
             </div>
@@ -102,7 +104,7 @@
     <footer>
         <p>&copy; 2024 Task Master. Todos los derechos reservados.</p>
     </footer>
-    <script src="../Scripts/main.js"></script>
+    <script src="../../Scripts/main.js"></script>
 </body>
 
 </html>
