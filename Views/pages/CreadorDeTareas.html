@@ -19,16 +19,17 @@
 </head>
 
 <body>
+    <div class="detection-area"></div>
     <div class="progress-bar" id="progressBar"></div>
     <header>
         <div class="menu">
             <nav class="navegador">
                 <ul>
-                    <li><a href="./TareasFinalizadas.html">Tareas Finalizadas</a></li>
-                    <li><a href="./CreadorDeTareas.html">Creador de Tareas</a></li>
+                    <li><a href="./Acerca&Contacto.html">Credenciales</a></li>
+                    <!--<li><a href="./TareasFinalizadas.html">Tareas Finalizadas</a></li>-->
                     <li><a href="../index.html">Centro de Tareas</a></li>
-                    <li><a href="./GestionDePersonal.html">Gestión de Personal</a></li>
-                    <li><a href="./Acerca&Contacto.html"> Acerca & Contacto</a></li>
+                    <li><a href="./CreadorDeTareas.html">Creador de Tareas</a></li>
+                    <!--<li><a href="./GestionDePersonal.html">Gestión de Personal</a></li>-->
                 </ul>
             </nav>
         </div>
@@ -43,11 +44,11 @@
                 </label>
                 <div class="container_flex">
                     <ul class="container_menu flex_column">
-                        <li><a href="./TareasFinalizadas.html">Tareas Finalizadas</a></li>
-                        <li><a href="./CreadorDeTareas.html">Creador de Tareas</a></li>
+                        <li><a href="./Acerca&Contacto.html">Credenciales</a></li>
+                        <!--<li><a href="./TareasFinalizadas.html">Tareas Finalizadas</a></li>-->
                         <li><a href="../index.html">Centro de Tareas</a></li>
-                        <li><a href="./GestionDePersonal.html">Gestión de Personal</a></li>
-                        <li><a href="./Acerca&Contacto.html"> Acerca & Contacto</a></li>
+                        <li><a href="./CreadorDeTareas.html">Creador de Tareas</a></li>
+                        <!--<li><a href="./GestionDePersonal.html">Gestión de Personal</a></li>-->
                     </ul>
                 </div>
             </div>
@@ -62,41 +63,56 @@
                 <h1>CREADOR DE TAREAS</h1>
             </div>
         </div>
+    </div>
 
         <main>
             <div id="taskForm">
                 <h2>Crear Tarea</h2>
-                <form id="newTaskForm">
-                    <label for="ListaDeEmpleadosTotal" >Empleado asignado:<br>
-                    <select id="taskEmployee"> <!-- Cambia ID con equipo js -->
-                        <option selected="selected" value="none"></option>
-                        <option value="Roberto Carlos">Roberto Carlos</option>
-                        <option value="Enrique Salvio">Enrique Salvio</option>
-                        <option value="Carlos Baute">Carlos Baute</option>
-                        <option value="Juan Carlos Mandala">Juan Carlos Mandala</option>
-                        <option value="Tony Stark">Tony Stark</option>
-                        <option value="Usain Bolt">Usain Bolt</option>
-                        <option value="Bilbo Bolson">Bilbo Bolson</option>
-                        <option value="Aragon">Aragon</option>
-                        <option value="Harry Potter">Harry Potter</option>
-                    </select>
-                    <div class="InputDetalles">
-                    <label for="Tarea">Tarea:<br>
-                    <input type="text" id="taskName" placeholder="Nombre de la tarea" required> <!-- CHECKEAR ID con equipo js -->
-                    <label for="Descripcion">Descripción:<br>
-                    <input type="text" id="taskDescription" placeholder="Descripción de la tarea" required>
-                    <label for="Deadline">Fecha Límite:<br>
-                    <input type="date" id="taskDeadline" required>
+                <div class="CampoCreacionForm">
+                    <form id="newTaskForm">
+                        <label for="ListaDeEmpleadosTotal">Empleado asignado:<br>
+                            <select id="taskEmployee"> <!-- Cambia ID con equipo js -->
+                                <option selected="selected" value="none"></option>
+                                <option value="Roberto Carlos">Roberto Carlos</option>
+                                <option value="Enrique Salvio">Enrique Salvio</option>
+                                <option value="Carlos Baute">Carlos Baute</option>
+                                <option value="Juan Carlos Mandala">Juan Carlos Mandala</option>
+                                <option value="Tony Stark">Tony Stark</option>
+                                <option value="Usain Bolt">Usain Bolt</option>
+                                <option value="Bilbo Bolson">Bilbo Bolson</option>
+                                <option value="Aragon">Aragon</option>
+                                <option value="Harry Potter">Harry Potter</option>
+                            </select>
                 </div>
+
+                <div class="InputDetalles">
+                    <div class="CampoCreacionForm">
+                        <label for="Tarea">Tarea:<br>
+                            <input type="text" id="taskName" placeholder="Nombre de la tarea" required>
+                    </div> <!-- CHECKEAR ID con equipo js -->
+                    <div class="CampoCreacionForm">
+                        <label for="Descripcion">Descripción:<br>
+                            <input type="text" id="taskDescription" placeholder="Descripción de la tarea" required>
+                    </div>
+                    <div class="CampoCreacionForm">
+                        <label for="Deadline">Fecha Límite:<br>
+                            <input type="date" id="taskDeadline" required>
+                    </div>
+                </div>
+
+                <div class="CampoCreacionForm">
                     <label for="Prioridad">Prioridad:<br>
-                    <select id="taskPriority">
-                        <option selected="selected" value="none"></option>
-                        <option value="Baja">Baja</option>
-                        <option value="Media">Media</option>
-                        <option value="Alta">Alta</option>
-                        <option value="URGENTE">URGENTE</option>
-                    </select><br>
-                    <button type="submit">Agregar</button>
+                        <select id="taskPriority">
+                            <option selected="selected" value="none"></option>
+                            <option value="Baja">Baja</option>
+                            <option value="Media">Media</option>
+                            <option value="Alta">Alta</option>
+                            <option value="Urgente">¡ Urgente !</option>
+                        </select>
+                        <br>
+                </div>
+
+                <button type="submit">Agregar</button>
                 </form>
             </div>
             <div id="taskList">
@@ -104,11 +120,12 @@
                 <ul id="ListaDeTareasAsignadasTotal"></ul>
             </div>
         </main>
-    </div>
+
     <footer>
         <p>&copy; 2024 Task Master. Todos los derechos reservados.</p>
     </footer>
-    <script src="../../Scripts/main.js"></script>
+    <script src="../Scripts/main.js"></script>
+    <script src="../../Scripts/NavVisible.js"></script>
 </body>
 
 </html>
