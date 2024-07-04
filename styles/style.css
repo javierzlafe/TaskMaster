@@ -2,21 +2,24 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #fff0d7  ;
+    color: #CC8403;
+    overflow-x: hidden;
 }
+
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+
 }
 
 .containermenu {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-
-
 
 header {
     color: #fff;
@@ -25,10 +28,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
-    position: relative;
+    height: auto;
     width: 100%;
-    z-index: 1010;
 }
 
 header div {
@@ -65,6 +66,10 @@ main {
         width: 48%;
 }
 
+h2 {
+        color: #000000;
+}
+
 #TareasFinalizadas {
     display: flex;
     justify-content: center;
@@ -94,14 +99,14 @@ input, select, button {
 }
 
 button {
-    background: #336699;
+    background: #FFC205;
     color: #fff;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background: #5084b8;
+    background: #FFE005;
     transition: 500ms;
 }
 
@@ -109,12 +114,24 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #3a75af;
+    background: #FFA104;
     color: #fff;
     padding: 10px 0;
     text-align: center;
     position: relative;
+    width: 98%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
+
+/*
+Color Base: #FFA104
+Análogo 1: #FFB704
+Análogo 2: #FF8E04
+Tono Claro: #FFD382
+Tono Oscuro: #CC8403
+*/
 
 .cajalogo {
     display: flex;
@@ -146,6 +163,24 @@ button:hover {
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
 }
 
+.prompt-regular {
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .prompt-medium {
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .prompt-medium-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+
 .menu{
     /*
     position: absolute;
@@ -157,24 +192,45 @@ button:hover {
 }
 
 nav {
-    padding: 15px;
-    box-shadow: 5px 3px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
     display: flex;
-    /*
     flex-direction: column;
     position: absolute;
-    right: 0;*/
-    justify-content: space-evenly;
-    background-color: #3978b8;
-    border-radius: 50px;
+    right: -250px; /* Oculta la barra fuera de la pantalla */
+    top: 0;
+    height: 75%;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFA104;
+    transition: right 1.75s ease; /* Añade una transición suave */
+    z-index: 10000;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 50px 0px 0px 50px;
+}
+
+nav.visible {
+    right: 0; /* Muestra la barra */
+}
+
+.centradoMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CampoCreacionForm {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 ul {
     list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
-    gap: 30px;
+    flex-direction: column;
+    justify-content: space-evenly; /* Distribuye los elementos uniformemente */
+    align-items: center;
+    height: 100%; /* Asegura que el ul ocupe todo el espacio disponible */
 }
 
 a {
@@ -182,33 +238,39 @@ a {
     color: #fff;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
-    padding: 8px;
 }
 
 ul li {
-    transition: padding 0.3s ease-in-out;
-
+    transition: padding 1.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ul li:hover {
     padding-left: 8px;
     padding-right: 8px;
+    transition: padding 3.75s ease-in-out; /* Añade una transición suave */
 }
 
 ul li a {
     font-family: "Yellowtail", cursive;
     font-weight: 500;
     font-style: normal;
+    transition: 0.5s;
 }
 
 ul li:hover a {
-    background: #fff;
-    color: #5f5f5f;
-    border-radius: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    background: #ffb53a;
+    color: white;
+    border-radius: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: padding 0.5s ease-in-out;
+    transition: 0.5s;
+    font-size: 1.5em;
 }
 
 .movil {
@@ -228,7 +290,7 @@ ul li:hover a {
     top: 0;
     right: -100vw;
     width: 100%;
-    height: 89vh;
+    height: 90vh;
     transition: all .5s ease;
     z-index: 2450;
 }
@@ -243,7 +305,7 @@ ul li:hover a {
     }
 
 .DatosDeInteres a{
-color: blue;
+    color: #FFA104;
 }
 
 .no-scroll-textarea {
@@ -366,14 +428,14 @@ display: none;
 }
 
 footer {
-    background-color: #275d92;
+    background-color: #ffe1b0 ;
     color: #fff;
     text-align: center;
     padding-top: 0px;
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;
-    z-index: 990;
+    z-index: 5000;
 }
 
 footer p {
@@ -385,14 +447,13 @@ font-size: 0.8em;
 
 .TaskMaster h1,
 .yellowtail-regular {
-    font-family: "Yellowtail", cursive;
-    font-weight: 400;
-    font-style: normal;
-    text-shadow: 0px 1px 2px #272727;
+
+text-shadow: 1px 1px 1px #ac5c00;
 }
 
 .TaskMaster h1 {
     font-size: 3em;
+
 }
 
 /* -------------------------------------------------------------------------------------------------- */
@@ -450,12 +511,7 @@ font-size: 0.8em;
         margin-bottom: 10px;
     }
 
-    .introduccion h1 {
-        font-size: 2.5em;
-        font-family: "Seaweed Script", cursive;
-        font-weight: 400;
-        font-style: normal;
-    }
+   
 
     .introduccion p {
         font-size: 1.25em;
@@ -577,6 +633,7 @@ font-size: 0.8em;
     }
 
     footer p {
-    font-size: 0.68em;
+    font-size: 0.75em;
+    text-shadow: 2px 4px 8px #272727;
     }
 }

@@ -19,16 +19,17 @@
 </head>
 
 <body>
+    <div class="detection-area"></div>
     <div class="progress-bar" id="progressBar"></div>
     <header>
         <div class="menu">
             <nav class="navegador">
                 <ul>
-                    <li><a href="./TareasFinalizadas.html">Tareas Finalizadas</a></li>
-                    <li><a href="./CreadorDeTareas.html">Creador de Tareas</a></li>
+                    <li><a href="./Acerca&Contacto.html">Credenciales</a></li>
+                    <!--<li><a href="./TareasFinalizadas.html">Tareas Finalizadas</a></li>-->
                     <li><a href="../index.html">Centro de Tareas</a></li>
-                    <li><a href="./GestionDePersonal.html">Gestión de Personal</a></li>
-                    <li><a href="./Acerca&Contacto.html"> Acerca & Contacto</a></li>
+                    <li><a href="./CreadorDeTareas.html">Creador de Tareas</a></li>
+                    <!--<li><a href="./GestionDePersonal.html">Gestión de Personal</a></li>-->
                 </ul>
             </nav>
         </div>
@@ -43,11 +44,11 @@
                 </label>
                 <div class="container_flex">
                     <ul class="container_menu flex_column">
-                        <li><a href="./TareasFinalizadas.html">Tareas Finalizadas</a></li>
-                        <li><a href="./CreadorDeTareas.html">Creador de Tareas</a></li>
+                        <li><a href="./Acerca&Contacto.html">Credenciales</a></li>
+                        <!--<li><a href="./TareasFinalizadas.html">Tareas Finalizadas</a></li>-->
                         <li><a href="../index.html">Centro de Tareas</a></li>
-                        <li><a href="./GestionDePersonal.html">Gestión de Personal</a></li>
-                        <li><a href="./Acerca&Contacto.html"> Acerca & Contacto</a></li>
+                        <li><a href="./CreadorDeTareas.html">Creador de Tareas</a></li>
+                        <!--<li><a href="./GestionDePersonal.html">Gestión de Personal</a></li>-->
                     </ul>
                 </div>
             </div>
@@ -59,106 +60,39 @@
                 <img src="../../assets/img/LogoTM-Blanco.png" alt="logo" class="imgcajalogo"></a>
             </div>
             <div class="TaskMaster">
-                <h1>DATOS DE CONTACTO</h1>
+                <h1>CREDENCIALES</h1>
             </div>
         </div>
+    </div>
 
-        <main>
+        <main class="centradoMain">
             <div class="RecuadroTask">
                 <div>
                     <div class="InputDetalles">
                     <form action="#" class="FormularioContacto">
-                        <label for="nombreyapellido">Coloca tu nombre y apellido<br>
-                            <div class="espaciadito"><input type="text" placeholder="NOMBRE y APELLIDO"></div>
-                        </label>
-                        <br>
-                        <label for="email">Coloca tu Email<br>
+                        <label for="email">Mail<br>
                             <div class="espaciadito"><input type="email" placeholder="nombre@gmail.com" name="usermail">
                             </div>
                         </label>
                         <br>
-                        <label for="Edad">Coloca tu Edad<br>
-                            <div class="espaciadito"><input max="109" min="18" name="age" step="1" type="number" value="18"
-                                    placeholder="EDAD"></div>
+                        <label for="password">Contraseña<br>
+                            <div class="espaciadito"><input type="password" placeholder="Contraseña" name="password">
+                            </div>
                         </label>
                     </div>
                         <br>
-                        <label for="Genero">Coloca tu Género<br>
-                            <div class="espaciadito"><select name="gender">
-                                    <option selected="selected" value="none"></option>
-                                    <option value="male">Masculino</option>
-                                    <option value="female">Femenino</option>
-                                    <option value="nobinario">No binario</option>
-                                </select></div>
-                        </label>
-                        <br>
-                        <label for="Observaciones"> Observaciones <br>
-                            <div><textarea class="no-scroll-textarea" placeholder="Observaciones"></textarea></div>
-                        </label>
-                        <br>
-                        
-                        <div class="chequi">
-                            <p>¿Es o fue cliente nuestro?</p>
-                            <label><input name="terms" type="checkbox" value="tandc"></label>
-                        </div>
-                        <br>
-                        <button type="submit">Agregar</button>
+                        <button type="submit">Ingresar</button>
+                        <button type="submit">Olvide la Contraseña</button>
                 </div>
                 </form>
-            </div>
-
-            <div class="RecuadroTask">
-                <h2>Datos de Interés</h2>
-                <ul class="DatosDeInteres">
-                    <li>Domicilio: Calle Falsa 123, C.A.B.A., Buenos Aires, Argentina</li>
-                    <li>Mail: <a href="mailto:ejemplo@cliente.com">ejemplo@cliente.com</a></li> 
-                    <li>Nuestras redes:
-                        <br><br>
-                            <ul class="redes">
-                                <!-- ICONOS -->
-                                <li>
-                                    <a href="https://Facebook.com/taskmaster" target="_BLANK">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook"
-                                            width="50" height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3a75af"
-                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://Instagram.com/taskmaster/" target="_BLANK">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
-                                            width="50" height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3a75af"
-                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
-                                            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                                            <path d="M16.5 7.5l0 .01" />
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.google.com/search?q=taskmaster" target="_BLANK">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-google"
-                                            width="50" height="50" viewBox="0 0 24 24" stroke-width="2" stroke="#3a75af" fill="none"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <path d="M17.788 5.108a9 9 0 1 0 3.212 6.892h-8" />
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        
-                    </li>
-                </ul>
             </div>
         </main>
     </div>
     <footer>
         <p>&copy; 2024 Task Master. Todos los derechos reservados.</p>
     </footer>
-    <script src="../../Scripts/main.js"></script>
+    <script src="../Scripts/main.js"></script>
+    <script src="../../Scripts/NavVisible.js"></script>
 </body>
 
 </html>
