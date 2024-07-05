@@ -25,11 +25,9 @@
         <div class="menu">
             <nav class="navegador">
                 <ul>
-                    <li><a href="./Acerca&Contacto.html">Credenciales</a></li>
-                    <!--<li><a href="./TareasFinalizadas.html">Tareas Finalizadas</a></li>-->
+                    <li><a href="./Credenciales.html">Credenciales</a></li>
                     <li><a href="../index.html">Centro de Tareas</a></li>
-                    <li><a href="./CreadorDeTareas.html">Creador de Tareas</a></li>
-                    <!--<li><a href="./GestionDePersonal.html">Gestión de Personal</a></li>-->
+                    <li><a href="#">Creador de Tareas</a></li>
                 </ul>
             </nav>
         </div>
@@ -44,11 +42,10 @@
                 </label>
                 <div class="container_flex">
                     <ul class="container_menu flex_column">
-                        <li><a href="./Acerca&Contacto.html">Credenciales</a></li>
-                        <!--<li><a href="./TareasFinalizadas.html">Tareas Finalizadas</a></li>-->
+                        <li><a href="./Credenciales.html">Credenciales</a></li>
+                        <li><a href="./Credenciales.html">Credenciales</a></li>
                         <li><a href="../index.html">Centro de Tareas</a></li>
-                        <li><a href="./CreadorDeTareas.html">Creador de Tareas</a></li>
-                        <!--<li><a href="./GestionDePersonal.html">Gestión de Personal</a></li>-->
+                        <li><a href="#">Creador de Tareas</a></li>
                     </ul>
                 </div>
             </div>
@@ -71,7 +68,7 @@
                 <div class="CampoCreacionForm">
                     <form id="newTaskForm">
                         <label for="ListaDeEmpleadosTotal">Empleado asignado:<br>
-                            <select id="taskEmployee"> <!-- Cambia ID con equipo js -->
+                            <select id="taskEmployee"> <!-- Cambia ID con equipo Back -->
                                 <option selected="selected" value="none"></option>
                                 <option value="Roberto Carlos">Roberto Carlos</option>
                                 <option value="Enrique Salvio">Enrique Salvio</option>
@@ -89,7 +86,7 @@
                     <div class="CampoCreacionForm">
                         <label for="Tarea">Tarea:<br>
                             <input type="text" id="taskName" placeholder="Nombre de la tarea" required>
-                    </div> <!-- CHECKEAR ID con equipo js -->
+                    </div> <!-- CHECKEAR ID con equipo Back -->
                     <div class="CampoCreacionForm">
                         <label for="Descripcion">Descripción:<br>
                             <input type="text" id="taskDescription" placeholder="Descripción de la tarea" required>
@@ -112,7 +109,7 @@
                         <br>
                 </div>
 
-                <button type="submit">Agregar</button>
+                <button type="submit" onclick="showAlert()">Agregar</button>
                 </form>
             </div>
             <div id="taskList">

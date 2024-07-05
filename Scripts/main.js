@@ -2,6 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const taskForm = document.getElementById('newTaskForm');
     const taskList = document.getElementById('ListaDeTareasAsignadasTotal');
 
+    let calendarEl = document.getElementById('calendar');
+    let calendar = new FullCalendar.Calendar(calendarEl, {
+      plugins: [ 'dayGrid' ],
+      initialView: 'dayGridMonth'
+    });
+    calendar.render();
+
     taskForm.addEventListener('submit', (e) => {
         e.preventDefault();
         
@@ -80,32 +87,6 @@ document.addEventListener('DOMContentLoaded', () => {
     loadTasks();
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Funciones de integración
 const apiUrl = 'https://api.example.com/tasks'; // URL de ejemplo para la API
 
@@ -168,3 +149,11 @@ completeTask = async (id) => {
 deleteTask = async (id) => {
     await deleteTask(id);
 };
+
+function showAlert() {
+    Swal.fire({
+      title: 'Creada!!',
+      text: 'Tarea creada exitosamente',
+      icon: 'success'
+    });
+  }
